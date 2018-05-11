@@ -11,7 +11,7 @@ struct tree {
 };
 
 template<typename T>
-class SimpleTree: public Container
+class SimpleTree: public Container<T>
 {
 public:
     SimpleTree();

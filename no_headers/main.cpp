@@ -9,10 +9,12 @@ int main()
     SimpleTree<int>* c;
 
     for(int i = 1; i < 10; i++)
+    {
         c->insert(i*i);
+    }
 
     printf("List after creation:\n");
-    c->print();
+    //c->print();
 
     if(c->exists(25))
         cout << "Search for value 25: found" << endl;
@@ -22,7 +24,7 @@ int main()
 
     c->remove(25);
     cout << "Tree after deletion of the element:" << endl;
-    c->print();
+    //c->print();
 
     delete c;
     return 0;

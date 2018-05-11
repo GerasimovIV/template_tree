@@ -7,14 +7,15 @@ using std::cout;
 using std::endl;
 
 
-
 template<typename T>
-SimpleTree::SimpleTree()
+SimpleTree<T>::SimpleTree()
 {
     this->root = NULL;
 }
 
-void SimpleTree::delete_struckt(tree* Position)
+
+template<typename T>
+void SimpleTree<T>::delete_struckt(struct tree<T>* Position)
 {
     if (Position->left != NULL)
     {
@@ -27,22 +28,24 @@ void SimpleTree::delete_struckt(tree* Position)
     }
 	free(Position);
 }
-SimpleTree::~SimpleTree()
+
+template<typename T>
+SimpleTree<T>::~SimpleTree()
 {
     delete_struckt(this->root);
 }
 
 template<typename T>
-tree* SimpleTree::create(T value)
+struct tree<T>* SimpleTree<T>::create(T value)
 {
-    tree* Head = (tree*)malloc(sizeof(tree));
+    struct tree<T>* Head = (struct tree<T>*)malloc(sizeof(struct tree<T>));
     Head->value = value;
     Head->right = NULL;
     Head->left = NULL;
     return Head;
 }
-
-void SimpleTree::insert_into_tree(tree* Head, tree* element)
+template<typename T>
+void SimpleTree<T>::insert_into_tree(struct tree<T>* Head, struct tree<T>* element)
 {
 	int t = 0;
     //printf("in func %d\n", Head->value);
@@ -82,9 +85,9 @@ void SimpleTree::insert_into_tree(tree* Head, tree* element)
 
 }
 template<typename T>
-void SimpleTree::insert(T value)
+void SimpleTree<T>::insert(T value)
 {
-    tree* element = this->create(value);
+    struct tree<T>* element = this->create(value);
     if (this->root == NULL)
     {
         this->root = element;
@@ -96,9 +99,9 @@ void SimpleTree::insert(T value)
 	Balance_tree_polzovatel();
 }
 template<typename T>
-tree* SimpleTree::search_by_value(tree* Head, T val)
+struct tree<T>* SimpleTree<T>::search_by_value(struct tree<T>* Head, T val)
 {
-    tree* rezult;
+    struct tree<T>* rezult;
     if (Head->value == val)
     {
         return Head;
@@ -130,22 +133,22 @@ tree* SimpleTree::search_by_value(tree* Head, T val)
     return rezult;
 }
 template<typename T>
-tree* SimpleTree::find(T value)
+struct tree<T>* SimpleTree<T>::find(T value)
 {
     return search_by_value(this->root, value);
 }
 template<typename T>
-bool SimpleTree::exists(T value)
+bool SimpleTree<T>::exists(T value)
 {
-    tree* el_for_find = this->find(value);
+    struct tree<T>* el_for_find = this->find(value);
     return el_for_find != NULL;
 
 }
 
 template<typename T>
-void SimpleTree::remove(T value)
+void SimpleTree<T>::remove(T value)
 {
-    tree* el_del = this->find(value);
+    struct tree<T>* el_del = this->find(value);
     if (el_del != NULL)
     {
         delete_element_tree(&this->root, el_del);
@@ -157,10 +160,10 @@ void SimpleTree::remove(T value)
 
 }
 
-
-tree* SimpleTree::search_head_for_delete(tree* Head, tree* el_del)
+template<typename T>
+struct tree<T>* SimpleTree<T>::search_head_for_delete(struct tree<T>* Head, struct tree<T>* el_del)
 {
-    tree* rezult = NULL;
+    struct tree<T>* rezult = NULL;
     if (Head->left == el_del)
     {
         return Head;
@@ -196,8 +199,8 @@ tree* SimpleTree::search_head_for_delete(tree* Head, tree* el_del)
     }
     return rezult;
 }
-
-void SimpleTree::delete_element_tree(tree** Head, tree* el_del)
+template<typename T>
+void SimpleTree<T>::delete_element_tree(struct tree<T>** Head, struct tree<T>* el_del)
 {
 
     if ((*Head) == el_del)
@@ -217,7 +220,7 @@ void SimpleTree::delete_element_tree(tree** Head, tree* el_del)
     }
     else
     {
-        tree* s;
+        struct tree<T>* s;
         s = search_head_for_delete((*Head), el_del);
 		int t = 0;
         if ((t != 1) && (el_del->left == NULL) && (el_del->right == NULL))
@@ -276,8 +279,8 @@ void SimpleTree::delete_element_tree(tree** Head, tree* el_del)
         }
     }
 }
-
-int SimpleTree::get_hight(tree* node)
+template<typename T>
+int SimpleTree<T>::get_hight(struct tree<T>* node)
 {
     if (node == NULL)
     {
@@ -297,7 +300,9 @@ int SimpleTree::get_hight(tree* node)
         }
     }
 }
-void SimpleTree::change_hight(tree* Position)
+
+template<typename T>
+void SimpleTree<T>::change_hight(struct tree<T>* Position)
 {
     if (Position->left != NULL)
     {
@@ -309,37 +314,48 @@ void SimpleTree::change_hight(tree* Position)
         change_hight(Position->right);
     }
 }
-void SimpleTree::small_left_rotation(tree* node_a)
+
+template<typename T>
+void SimpleTree<T>::small_left_rotation(struct tree<T>* node_a)
 {
-	tree* node_b = node_a->right;
+        struct tree<T>* node_b = node_a->right;
 	node_a->right = node_b->left;
 	node_b->left = node_a;
 }
-void SimpleTree::big_left_rotation(tree* node_a)
+
+template<typename T>
+void SimpleTree<T>::big_left_rotation(struct tree<T>* node_a)
 {
-	tree* node_b = node_a->right;
-	tree* node_c = node_b->left;
+        struct tree<T>* node_b = node_a->right;
+        struct tree<T>* node_c = node_b->left;
 	node_a->right = node_c->left;
 	node_b->left = node_c->right;
 	node_c->left = node_a;
 	node_c->right = node_b;
 }
-void SimpleTree::big_right_rotation(tree* node_a)
+
+template<typename T>
+void SimpleTree<T>::big_right_rotation(struct tree<T>* node_a)
 {
-	tree* node_b = node_a->left;
-	tree* node_c = node_b->right;
+        struct tree<T>* node_b = node_a->left;
+        struct tree<T>* node_c = node_b->right;
 	node_a->left = node_c->right;
 	node_b->right = node_c->left;
 	node_c->left = node_b;
 	node_c->right = node_a;
 }
-void SimpleTree::small_right_rotation(tree* node_a)
+
+
+template<typename T>
+void SimpleTree<T>::small_right_rotation(struct tree<T>* node_a)
 {
-	tree* node_b = node_a->left;
+        struct tree<T>* node_b = node_a->left;
 	node_a->left = node_b->right;
 	node_b->right = node_a;
 }
-int SimpleTree::get_hight_for_me(tree* node)
+
+template<typename T>
+int SimpleTree<T>::get_hight_for_me(struct tree<T>* node)
 {
 	if (node == NULL)
 	{
@@ -348,7 +364,9 @@ int SimpleTree::get_hight_for_me(tree* node)
 	return node->hight;
 }
 
-void SimpleTree::balance(tree* node, tree** Head)//передаем head, head второй понадобтся позже
+
+template<typename T>
+void SimpleTree<T>::balance(struct tree<T>* node, struct tree<T>** Head)//передаем head, head второй понадобтся позже
 {
 	//printf("Head:%d 1: %d\n",(*Head)->value, node->value);
 	if (node->left != NULL)
@@ -378,7 +396,7 @@ void SimpleTree::balance(tree* node, tree** Head)//передаем head, head �
 		{
 			//малое левое вращение
 			
-			tree* prev = search_head_for_delete(*Head, node);
+                        struct tree<T>* prev = search_head_for_delete(*Head, node);
 			
 			//printf("%d", prev->value);
 			if (prev != NULL)
@@ -409,7 +427,7 @@ void SimpleTree::balance(tree* node, tree** Head)//передаем head, head �
 		if ((t != 1) && (abs(get_hight_for_me(node->left) - get_hight_for_me(node->right)) >= 2) && (get_hight_for_me(node->right->left) > get_hight_for_me(node->right->right)))
 		{
 			//большое левое вращение
-			tree* prev = search_head_for_delete(*Head, node);
+                        struct tree<T>* prev = search_head_for_delete(*Head, node);
 			if (prev != NULL)
 			{
 				//узнаем расположение prev и node
@@ -437,7 +455,7 @@ void SimpleTree::balance(tree* node, tree** Head)//передаем head, head �
 		if ((t != 1) && (abs(get_hight_for_me(node->left) - get_hight_for_me(node->right)) >= 2) && (get_hight_for_me(node->left->right) <= get_hight_for_me(node->left->left)))
 		{
 			//малое правое вращение
-			tree* prev = search_head_for_delete(*Head, node);
+                        struct tree<T>* prev = search_head_for_delete(*Head, node);
 			if (prev != NULL)
 			{
 				//узнаем расположение prev и node
@@ -464,7 +482,7 @@ void SimpleTree::balance(tree* node, tree** Head)//передаем head, head �
 		if ((t != 1) && (abs(get_hight_for_me(node->left) - get_hight_for_me(node->right)) >= 2) && (get_hight_for_me(node->left->right) > get_hight_for_me(node->left->left)))
 		{
 			//большое правое вращение
-			tree* prev = search_head_for_delete(*Head, node);
+                        struct tree<T>* prev = search_head_for_delete(*Head, node);
 			if (prev != NULL)
 			{
 				//узнаем расположение prev и node
@@ -494,10 +512,12 @@ void SimpleTree::balance(tree* node, tree** Head)//передаем head, head �
 
 	
 }
-tree* SimpleTree::balance_tree(tree* Head)
+
+template<typename T>
+struct tree<T>* SimpleTree<T>::balance_tree(struct tree<T>* Head)
 {
-	tree* itog;
-	tree* Head1 = Head;
+        struct tree<T>* itog;
+        struct tree<T>* Head1 = Head;
 	balance(Head, &Head1);
 	change_hight(Head1);
 	while (Head != Head1)
@@ -510,7 +530,8 @@ tree* SimpleTree::balance_tree(tree* Head)
 	
 	return Head1;
 }
-void SimpleTree::Balance_tree_polzovatel()
+template<typename T>
+void SimpleTree<T>::Balance_tree_polzovatel()
 {
 	if (this->root == NULL)
 	{
@@ -521,7 +542,9 @@ void SimpleTree::Balance_tree_polzovatel()
 		this->root = balance_tree(this->root);
 	}
 }
-void SimpleTree::print_tree_with_hight (tree* Position)
+
+template<typename T>
+void SimpleTree<T>::print_tree_with_hight (struct tree<T>* Position)
 {
     if (Position->left != NULL)
     {
@@ -533,7 +556,9 @@ void SimpleTree::print_tree_with_hight (tree* Position)
         print_tree_with_hight(Position->right);
     }
 }
-void SimpleTree::print()
+
+template<typename T>
+void SimpleTree<T>::print()
 {
 	if (this->root != NULL)
 	{

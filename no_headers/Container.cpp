@@ -3,8 +3,10 @@
 
 using std::cout;
 using std::endl;
-Container::Container()
+template<typename T>
+Container<T>::Container()
 {
     cout << "Container created" << endl;
 }
-Container::~Container() { }
+template<typename T>
+Container<T>::~Container() { }
