@@ -25,6 +25,6 @@ int main()
     c.remove(25);
     cout << "Tree after deletion of the element:" << endl;
     c.print();
-
+    
     return 0;
 }

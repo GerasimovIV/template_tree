@@ -550,7 +550,7 @@ void SimpleTree<T>::print_tree_with_hight (struct tree<T>* Position)
     {
         print_tree_with_hight(Position->left);
     }
-    printf("node: %d hight: %d \n", Position->value, Position->hight);
+    cout << "value:"<<Position->value<< " height:" <<Position->hight<< endl;
     if (Position->right != NULL)
     {
         print_tree_with_hight(Position->right);
@@ -570,3 +570,11 @@ void SimpleTree<T>::print()
 		printf("Error: empty tree!");
 	}
 }
+
+
+template class SimpleTree<int>;
+template class SimpleTree<float>;
+template class SimpleTree<double>;
+template class SimpleTree<long int>;
+template class SimpleTree<unsigned int>;
+template class SimpleTree<long long int>;
