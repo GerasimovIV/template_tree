@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../headers/Container.hpp
+
+../headers/SimpleTree.hpp
+Container.hpp
+../headers/Container.hpp
+
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.cpp
+iostream
+-
+Container.hpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.hpp
+
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.cpp
+iostream
+-
+SimpleTree.hpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.hpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/main.cpp
+iostream
+-
+stdio.h
+-
+SimpleTree.hpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.hpp
+
