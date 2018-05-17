@@ -4,9 +4,15 @@
 
 using namespace std;
 
+/*
+int main()
+{
+    SimpleTree<int> c;
+    return 0;
+}*/
 int main() 
 {
-    Container<int>* c = new SimpleTree<int>();
+    Container<int>* c = new SimpleTree<int>(); //Container<int> c;
 
     for(int i = 1; i < 10; i++)
     {

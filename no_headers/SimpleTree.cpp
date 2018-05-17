@@ -17,16 +17,19 @@ SimpleTree<T>::SimpleTree()
 template<typename T>
 void SimpleTree<T>::delete_struckt(struct tree<T>* Position)
 {
-    if (Position->left != NULL)
+    if (Position != NULL)
     {
-        delete_struckt(Position->left);
-    }
+        if (Position->left != NULL)
+        {
+            delete_struckt(Position->left);
+        }
 
-    if (Position->right != NULL)
-    {
-        delete_struckt(Position->right);
+        if (Position->right != NULL)
+        {
+            delete_struckt(Position->right);
+        }
+            free(Position);
     }
-	free(Position);
 }
 
 template<typename T>
