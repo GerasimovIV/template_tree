@@ -4,12 +4,14 @@
 
 using namespace std;
 
-/*
 int main()
 {
-    SimpleTree<int> c;
+    Container<int>* c = new SimpleTree<int>();
+    cout << "Value 0 exists: " << boolalpha << c->exists(0) << endl;
+    delete c;
     return 0;
-}*/
+}
+/*
 int main() 
 {
     Container<int>* c = new SimpleTree<int>(); //Container<int> c;
@@ -34,3 +36,4 @@ int main()
     delete c;
     return 0;
 }
+*/

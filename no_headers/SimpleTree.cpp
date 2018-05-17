@@ -143,6 +143,10 @@ struct tree<T>* SimpleTree<T>::find(T value)
 template<typename T>
 bool SimpleTree<T>::exists(T value)
 {
+    if (this->root == NULL)
+    {
+        return false;
+    }
     struct tree<T>* el_for_find = this->find(value);
     return el_for_find != NULL;
 
