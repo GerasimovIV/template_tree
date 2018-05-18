@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/trees.dir/no_headers/main.cpp.o"
-  "CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o"
-  "CMakeFiles/trees.dir/no_headers/Container.cpp.o"
+  "CMakeFiles/trees.dir/headers/SimpleTree.cpp.o"
+  "CMakeFiles/trees.dir/headers/Container.cpp.o"
+  "CMakeFiles/trees.dir/main.cpp.o"
   "trees.pdb"
   "trees"
 )

@@ -123,86 +123,86 @@ trees/fast:
 	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/build
 .PHONY : trees/fast
 
-no_headers/Container.o: no_headers/Container.cpp.o
+headers/Container.o: headers/Container.cpp.o
 
-.PHONY : no_headers/Container.o
-
-# target to build an object file
-no_headers/Container.cpp.o:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/Container.cpp.o
-.PHONY : no_headers/Container.cpp.o
-
-no_headers/Container.i: no_headers/Container.cpp.i
-
-.PHONY : no_headers/Container.i
-
-# target to preprocess a source file
-no_headers/Container.cpp.i:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/Container.cpp.i
-.PHONY : no_headers/Container.cpp.i
-
-no_headers/Container.s: no_headers/Container.cpp.s
-
-.PHONY : no_headers/Container.s
-
-# target to generate assembly for a file
-no_headers/Container.cpp.s:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/Container.cpp.s
-.PHONY : no_headers/Container.cpp.s
-
-no_headers/SimpleTree.o: no_headers/SimpleTree.cpp.o
-
-.PHONY : no_headers/SimpleTree.o
+.PHONY : headers/Container.o
 
 # target to build an object file
-no_headers/SimpleTree.cpp.o:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o
-.PHONY : no_headers/SimpleTree.cpp.o
+headers/Container.cpp.o:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/Container.cpp.o
+.PHONY : headers/Container.cpp.o
 
-no_headers/SimpleTree.i: no_headers/SimpleTree.cpp.i
+headers/Container.i: headers/Container.cpp.i
 
-.PHONY : no_headers/SimpleTree.i
+.PHONY : headers/Container.i
 
 # target to preprocess a source file
-no_headers/SimpleTree.cpp.i:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.i
-.PHONY : no_headers/SimpleTree.cpp.i
+headers/Container.cpp.i:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/Container.cpp.i
+.PHONY : headers/Container.cpp.i
 
-no_headers/SimpleTree.s: no_headers/SimpleTree.cpp.s
+headers/Container.s: headers/Container.cpp.s
 
-.PHONY : no_headers/SimpleTree.s
+.PHONY : headers/Container.s
 
 # target to generate assembly for a file
-no_headers/SimpleTree.cpp.s:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.s
-.PHONY : no_headers/SimpleTree.cpp.s
+headers/Container.cpp.s:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/Container.cpp.s
+.PHONY : headers/Container.cpp.s
 
-no_headers/main.o: no_headers/main.cpp.o
+headers/SimpleTree.o: headers/SimpleTree.cpp.o
 
-.PHONY : no_headers/main.o
+.PHONY : headers/SimpleTree.o
 
 # target to build an object file
-no_headers/main.cpp.o:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/main.cpp.o
-.PHONY : no_headers/main.cpp.o
+headers/SimpleTree.cpp.o:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/SimpleTree.cpp.o
+.PHONY : headers/SimpleTree.cpp.o
 
-no_headers/main.i: no_headers/main.cpp.i
+headers/SimpleTree.i: headers/SimpleTree.cpp.i
 
-.PHONY : no_headers/main.i
+.PHONY : headers/SimpleTree.i
 
 # target to preprocess a source file
-no_headers/main.cpp.i:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/main.cpp.i
-.PHONY : no_headers/main.cpp.i
+headers/SimpleTree.cpp.i:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/SimpleTree.cpp.i
+.PHONY : headers/SimpleTree.cpp.i
 
-no_headers/main.s: no_headers/main.cpp.s
+headers/SimpleTree.s: headers/SimpleTree.cpp.s
 
-.PHONY : no_headers/main.s
+.PHONY : headers/SimpleTree.s
 
 # target to generate assembly for a file
-no_headers/main.cpp.s:
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/main.cpp.s
-.PHONY : no_headers/main.cpp.s
+headers/SimpleTree.cpp.s:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/SimpleTree.cpp.s
+.PHONY : headers/SimpleTree.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -213,15 +213,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... trees"
-	@echo "... no_headers/Container.o"
-	@echo "... no_headers/Container.i"
-	@echo "... no_headers/Container.s"
-	@echo "... no_headers/SimpleTree.o"
-	@echo "... no_headers/SimpleTree.i"
-	@echo "... no_headers/SimpleTree.s"
-	@echo "... no_headers/main.o"
-	@echo "... no_headers/main.i"
-	@echo "... no_headers/main.s"
+	@echo "... headers/Container.o"
+	@echo "... headers/Container.i"
+	@echo "... headers/Container.s"
+	@echo "... headers/SimpleTree.o"
+	@echo "... headers/SimpleTree.i"
+	@echo "... headers/SimpleTree.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

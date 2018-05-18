@@ -57,90 +57,90 @@ include CMakeFiles/trees.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/trees.dir/flags.make
 
-CMakeFiles/trees.dir/no_headers/main.cpp.o: CMakeFiles/trees.dir/flags.make
-CMakeFiles/trees.dir/no_headers/main.cpp.o: ../no_headers/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trees.dir/no_headers/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trees.dir/no_headers/main.cpp.o -c /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/main.cpp
+CMakeFiles/trees.dir/headers/SimpleTree.cpp.o: CMakeFiles/trees.dir/flags.make
+CMakeFiles/trees.dir/headers/SimpleTree.cpp.o: ../headers/SimpleTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/trees.dir/headers/SimpleTree.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trees.dir/headers/SimpleTree.cpp.o -c /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/SimpleTree.cpp
 
-CMakeFiles/trees.dir/no_headers/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trees.dir/no_headers/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/main.cpp > CMakeFiles/trees.dir/no_headers/main.cpp.i
+CMakeFiles/trees.dir/headers/SimpleTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trees.dir/headers/SimpleTree.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/SimpleTree.cpp > CMakeFiles/trees.dir/headers/SimpleTree.cpp.i
 
-CMakeFiles/trees.dir/no_headers/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trees.dir/no_headers/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/main.cpp -o CMakeFiles/trees.dir/no_headers/main.cpp.s
+CMakeFiles/trees.dir/headers/SimpleTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trees.dir/headers/SimpleTree.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/SimpleTree.cpp -o CMakeFiles/trees.dir/headers/SimpleTree.cpp.s
 
-CMakeFiles/trees.dir/no_headers/main.cpp.o.requires:
+CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.requires:
 
-.PHONY : CMakeFiles/trees.dir/no_headers/main.cpp.o.requires
+.PHONY : CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.requires
 
-CMakeFiles/trees.dir/no_headers/main.cpp.o.provides: CMakeFiles/trees.dir/no_headers/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/main.cpp.o.provides.build
-.PHONY : CMakeFiles/trees.dir/no_headers/main.cpp.o.provides
+CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.provides: CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.requires
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.provides.build
+.PHONY : CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.provides
 
-CMakeFiles/trees.dir/no_headers/main.cpp.o.provides.build: CMakeFiles/trees.dir/no_headers/main.cpp.o
-
-
-CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o: CMakeFiles/trees.dir/flags.make
-CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o: ../no_headers/SimpleTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o -c /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.cpp
-
-CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.cpp > CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.i
-
-CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.cpp -o CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.s
-
-CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.requires:
-
-.PHONY : CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.requires
-
-CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.provides: CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.requires
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.provides.build
-.PHONY : CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.provides
-
-CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.provides.build: CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o
+CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.provides.build: CMakeFiles/trees.dir/headers/SimpleTree.cpp.o
 
 
-CMakeFiles/trees.dir/no_headers/Container.cpp.o: CMakeFiles/trees.dir/flags.make
-CMakeFiles/trees.dir/no_headers/Container.cpp.o: ../no_headers/Container.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/trees.dir/no_headers/Container.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trees.dir/no_headers/Container.cpp.o -c /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.cpp
+CMakeFiles/trees.dir/headers/Container.cpp.o: CMakeFiles/trees.dir/flags.make
+CMakeFiles/trees.dir/headers/Container.cpp.o: ../headers/Container.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/trees.dir/headers/Container.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trees.dir/headers/Container.cpp.o -c /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.cpp
 
-CMakeFiles/trees.dir/no_headers/Container.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trees.dir/no_headers/Container.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.cpp > CMakeFiles/trees.dir/no_headers/Container.cpp.i
+CMakeFiles/trees.dir/headers/Container.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trees.dir/headers/Container.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.cpp > CMakeFiles/trees.dir/headers/Container.cpp.i
 
-CMakeFiles/trees.dir/no_headers/Container.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trees.dir/no_headers/Container.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.cpp -o CMakeFiles/trees.dir/no_headers/Container.cpp.s
+CMakeFiles/trees.dir/headers/Container.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trees.dir/headers/Container.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.cpp -o CMakeFiles/trees.dir/headers/Container.cpp.s
 
-CMakeFiles/trees.dir/no_headers/Container.cpp.o.requires:
+CMakeFiles/trees.dir/headers/Container.cpp.o.requires:
 
-.PHONY : CMakeFiles/trees.dir/no_headers/Container.cpp.o.requires
+.PHONY : CMakeFiles/trees.dir/headers/Container.cpp.o.requires
 
-CMakeFiles/trees.dir/no_headers/Container.cpp.o.provides: CMakeFiles/trees.dir/no_headers/Container.cpp.o.requires
-	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/no_headers/Container.cpp.o.provides.build
-.PHONY : CMakeFiles/trees.dir/no_headers/Container.cpp.o.provides
+CMakeFiles/trees.dir/headers/Container.cpp.o.provides: CMakeFiles/trees.dir/headers/Container.cpp.o.requires
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/headers/Container.cpp.o.provides.build
+.PHONY : CMakeFiles/trees.dir/headers/Container.cpp.o.provides
 
-CMakeFiles/trees.dir/no_headers/Container.cpp.o.provides.build: CMakeFiles/trees.dir/no_headers/Container.cpp.o
+CMakeFiles/trees.dir/headers/Container.cpp.o.provides.build: CMakeFiles/trees.dir/headers/Container.cpp.o
+
+
+CMakeFiles/trees.dir/main.cpp.o: CMakeFiles/trees.dir/flags.make
+CMakeFiles/trees.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/trees.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trees.dir/main.cpp.o -c /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/main.cpp
+
+CMakeFiles/trees.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trees.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/main.cpp > CMakeFiles/trees.dir/main.cpp.i
+
+CMakeFiles/trees.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trees.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/main.cpp -o CMakeFiles/trees.dir/main.cpp.s
+
+CMakeFiles/trees.dir/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/trees.dir/main.cpp.o.requires
+
+CMakeFiles/trees.dir/main.cpp.o.provides: CMakeFiles/trees.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/trees.dir/build.make CMakeFiles/trees.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/trees.dir/main.cpp.o.provides
+
+CMakeFiles/trees.dir/main.cpp.o.provides.build: CMakeFiles/trees.dir/main.cpp.o
 
 
 # Object files for target trees
 trees_OBJECTS = \
-"CMakeFiles/trees.dir/no_headers/main.cpp.o" \
-"CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o" \
-"CMakeFiles/trees.dir/no_headers/Container.cpp.o"
+"CMakeFiles/trees.dir/headers/SimpleTree.cpp.o" \
+"CMakeFiles/trees.dir/headers/Container.cpp.o" \
+"CMakeFiles/trees.dir/main.cpp.o"
 
 # External object files for target trees
 trees_EXTERNAL_OBJECTS =
 
-trees: CMakeFiles/trees.dir/no_headers/main.cpp.o
-trees: CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o
-trees: CMakeFiles/trees.dir/no_headers/Container.cpp.o
+trees: CMakeFiles/trees.dir/headers/SimpleTree.cpp.o
+trees: CMakeFiles/trees.dir/headers/Container.cpp.o
+trees: CMakeFiles/trees.dir/main.cpp.o
 trees: CMakeFiles/trees.dir/build.make
 trees: CMakeFiles/trees.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable trees"
@@ -151,9 +151,9 @@ CMakeFiles/trees.dir/build: trees
 
 .PHONY : CMakeFiles/trees.dir/build
 
-CMakeFiles/trees.dir/requires: CMakeFiles/trees.dir/no_headers/main.cpp.o.requires
-CMakeFiles/trees.dir/requires: CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o.requires
-CMakeFiles/trees.dir/requires: CMakeFiles/trees.dir/no_headers/Container.cpp.o.requires
+CMakeFiles/trees.dir/requires: CMakeFiles/trees.dir/headers/SimpleTree.cpp.o.requires
+CMakeFiles/trees.dir/requires: CMakeFiles/trees.dir/headers/Container.cpp.o.requires
+CMakeFiles/trees.dir/requires: CMakeFiles/trees.dir/main.cpp.o.requires
 
 .PHONY : CMakeFiles/trees.dir/requires
 

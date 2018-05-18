@@ -12,17 +12,19 @@
 Container.hpp
 ../headers/Container.hpp
 
-/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.cpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.cpp
 iostream
 -
 Container.hpp
-/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.hpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.hpp
 
-/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.cpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.hpp
+
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/SimpleTree.cpp
 iostream
 -
 SimpleTree.hpp
-/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.hpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/SimpleTree.hpp
 stdio.h
 -
 stdlib.h
@@ -30,11 +32,15 @@ stdlib.h
 math.h
 -
 
-/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/main.cpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/SimpleTree.hpp
+Container.hpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.hpp
+
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/main.cpp
 iostream
 -
 stdio.h
 -
 SimpleTree.hpp
-/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.hpp
+/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/SimpleTree.hpp
 

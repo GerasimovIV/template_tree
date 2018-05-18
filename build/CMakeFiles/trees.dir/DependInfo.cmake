@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/Container.cpp" "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles/trees.dir/no_headers/Container.cpp.o"
-  "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/SimpleTree.cpp" "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles/trees.dir/no_headers/SimpleTree.cpp.o"
-  "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/no_headers/main.cpp" "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles/trees.dir/no_headers/main.cpp.o"
+  "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/Container.cpp" "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles/trees.dir/headers/Container.cpp.o"
+  "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/headers/SimpleTree.cpp" "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles/trees.dir/headers/SimpleTree.cpp.o"
+  "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/main.cpp" "/home/athlete/MIPT/informatika/2_semestr/zadanie/2/tree/build/CMakeFiles/trees.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
