@@ -155,14 +155,21 @@ bool SimpleTree<T>::exists(T value)
 template<typename T>
 void SimpleTree<T>::remove(T value)
 {
-    struct tree<T>* el_del = this->find(value);
-    if (el_del != NULL)
+    if (this->root == NULL)
     {
-        delete_element_tree(&this->root, el_del);
-		if (this->root != NULL)
-		{
-			Balance_tree_polzovatel();
-		}
+        cout << "I can not delete element from empty tree" << endl;
+    }
+    else
+    {
+        struct tree<T>* el_del = this->find(value);
+        if (el_del != NULL)
+        {
+            delete_element_tree(&this->root, el_del);
+                    if (this->root != NULL)
+                    {
+                            Balance_tree_polzovatel();
+                    }
+        }
     }
 
 }

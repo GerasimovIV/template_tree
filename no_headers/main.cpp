@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     Container<int>* c = new SimpleTree<int>();
-    cout << "Value 0 exists: " << boolalpha << c->exists(0) << endl;
+    c->remove(5);
     delete c;
     return 0;
 }
