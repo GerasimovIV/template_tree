@@ -3,7 +3,7 @@
 #include "SimpleTree.hpp"
 
 using namespace std;
-
+/*
 int main()
 {
     Container<int>* c = new SimpleTree<int>();
@@ -11,7 +11,7 @@ int main()
     delete c;
     return 0;
 }
-/*
+*/
 int main() 
 {
     Container<int>* c = new SimpleTree<int>(); //Container<int> c;
@@ -36,4 +36,4 @@ int main()
     delete c;
     return 0;
 }
-*/
+

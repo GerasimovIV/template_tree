@@ -313,6 +313,7 @@ int SimpleTree<T>::get_hight(struct tree<T>* node)
             return get_hight(node->right) + 1;
         }
     }
+    return 0;
 }
 
 template<typename T>
@@ -530,7 +531,7 @@ void SimpleTree<T>::balance(struct tree<T>* node, struct tree<T>** Head)//пер
 template<typename T>
 struct tree<T>* SimpleTree<T>::balance_tree(struct tree<T>* Head)
 {
-        struct tree<T>* itog;
+
         struct tree<T>* Head1 = Head;
 	balance(Head, &Head1);
 	change_hight(Head1);
