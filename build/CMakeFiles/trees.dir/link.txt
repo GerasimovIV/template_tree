@@ -1,1 +1,0 @@
-/usr/bin/c++    -Wall    CMakeFiles/trees.dir/headers/SimpleTree.cpp.o CMakeFiles/trees.dir/headers/Container.cpp.o CMakeFiles/trees.dir/main.cpp.o  -o trees -rdynamic 
