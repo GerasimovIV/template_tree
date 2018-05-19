@@ -165,10 +165,10 @@ void SimpleTree<T>::remove(T value)
         if (el_del != NULL)
         {
             delete_element_tree(&this->root, el_del);
-                    if (this->root != NULL)
-                    {
-                            Balance_tree_polzovatel();
-                    }
+            if (this->root != NULL)
+            {
+                Balance_tree_polzovatel();
+            }
         }
     }
 
@@ -219,18 +219,22 @@ void SimpleTree<T>::delete_element_tree(struct tree<T>** Head, struct tree<T>* e
 
     if ((*Head) == el_del)
     {
-        if ((*Head)->left != NULL)
-		{
-			this->root = (*Head)->left;
-		}
-		if ((*Head)->right != NULL)
-		{
-			this->root = (*Head)->right;
-		}
-		if (((*Head)->left == NULL) && ((*Head)->right == NULL))
-		{
-			this->root = NULL;
-		}
+        bool z = false;
+
+        if ((*Head)->left != NULL && (z == false))
+        {
+            this->root = (*Head)->left;
+            z = true;
+        }
+        if ((*Head)->right != NULL  && (z == false))
+        {
+            this->root = (*Head)->right;
+            z = true;
+        }
+        if (((*Head)->left == NULL) && ((*Head)->right == NULL)  && (z == false))
+        {
+            this->root = NULL;
+        }
     }
     else
     {

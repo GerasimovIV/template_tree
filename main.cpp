@@ -12,6 +12,7 @@ int main()
     return 0;
 }
 */
+/*
 int main() 
 {
     Container<int>* c = new SimpleTree<int>(); //Container<int> c;
@@ -33,6 +34,20 @@ int main()
     c->remove(25);
     cout << "Tree after deletion of the element:" << endl;
     c->print();
+    delete c;
+    return 0;
+}*/
+
+int main()
+{
+    Container<int>* c = new SimpleTree<int>();
+    c->insert(1);
+    c->insert(2);
+    c->print();
+
+    c->remove(1);
+    c->print();
+
     delete c;
     return 0;
 }
