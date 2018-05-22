@@ -223,18 +223,41 @@ void SimpleTree<T>::delete_element_tree(struct tree<T>** Head, struct tree<T>* e
 
         if ((*Head)->left != NULL && (z == false))
         {
-            this->root = (*Head)->left;
-            z = true;
+            if ((*Head)->right == NULL)
+            {
+                this->root = (*Head)->left;
+                z = true;
+            }
+            else
+            {
+                insert_into_tree((*Head)->left, (*Head)->right);
+                this->root = (*Head)->left;
+                z = true;
+            }
+            Balance_tree_polzovatel();
+
         }
         if ((*Head)->right != NULL  && (z == false))
         {
-            this->root = (*Head)->right;
-            z = true;
+            if ((*Head)->left == NULL)
+            {
+                this->root = (*Head)->right;
+                z = true;
+            }
+            else
+            {
+                insert_into_tree((*Head)->right, (*Head)->left);
+                this->root = (*Head)->right;
+                z = true;
+            }
+            Balance_tree_polzovatel();
+
         }
         if (((*Head)->left == NULL) && ((*Head)->right == NULL)  && (z == false))
         {
             this->root = NULL;
         }
+
     }
     else
     {

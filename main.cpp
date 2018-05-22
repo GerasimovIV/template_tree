@@ -37,7 +37,7 @@ int main()
     delete c;
     return 0;
 }*/
-
+/*
 int main()
 {
     Container<int>* c = new SimpleTree<int>();
@@ -51,4 +51,56 @@ int main()
     delete c;
     return 0;
 }
+*/
 
+template<typename T>
+class DebugTree: public SimpleTree<T>
+{
+    void print()
+    {
+        tree<T>* cur_element = this->root;
+        printSubTree(cur_element);
+    }
+
+    void printSubTree(tree<T>* cur_element)
+    {
+        cerr << "Element: " << cur_element->value << " ";
+        cerr << "Height: " << cur_element->hight << " ";
+
+        if(cur_element->left != nullptr)
+            cerr << "Left: " << cur_element->left->value << " ";
+        else
+            cerr << "Left: -- ";
+
+        if(cur_element->right != nullptr)
+            cerr << "Right: " << cur_element->right->value << " ";
+        else
+            cerr << "Right: -- ";
+
+        cerr << endl;
+
+        if (cur_element-> left != nullptr)
+            printSubTree(cur_element->left);
+
+        if (cur_element-> right != nullptr)
+            printSubTree(cur_element->right);
+    }
+};
+
+int main()
+{
+    Container<int>* c = new DebugTree<int>();
+
+    for(int i = 1; i < 10; i++)
+        c->insert(i*i);
+
+    cerr << "Tree after creation:" << endl;
+    c->print();
+
+    c->remove(16);
+    cerr << "Tree after deletion of the element:" << endl;
+    c->print();
+
+    delete c;
+    return 0;
+}
