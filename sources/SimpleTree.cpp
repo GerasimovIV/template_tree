@@ -639,12 +639,12 @@ struct tree<T>* SimpleTree<T>::balance_tree(struct tree<T>* Head)
         balance(Head, &Head1);
         change_hight(Head1);
 
-//        while (Head != Head1)
-//        {
-//                Head = Head1;
-//                balance(Head, &Head1);
-//                change_hight(Head1);
-//        }
+        while (Head != Head1)
+        {
+                Head = Head1;
+                balance(Head, &Head1);
+        change_hight(Head1);
+        }
 
 
         return Head1;
