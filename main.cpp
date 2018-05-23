@@ -91,15 +91,20 @@ int main()
 {
     Container<int>* c = new DebugTree<int>();
 
-    for(int i = 1; i < 10; i++)
+    for(int i = 1; i < 9; i++)
         c->insert(i*i);
+
 
     cerr << "Tree after creation:" << endl;
     c->print();
+//    cout<<"******************************************************************"<<endl;
 
     c->remove(16);
+
+    //c->Balance_tree_polzovatel();
     cerr << "Tree after deletion of the element:" << endl;
     c->print();
+//    cout<<"++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<endl;
 
     delete c;
     return 0;

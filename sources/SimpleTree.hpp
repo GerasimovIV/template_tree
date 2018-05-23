@@ -20,6 +20,17 @@ public:
     bool exists(T value);
     void remove(T value);
     void print();
+    void search_head_for_balance( struct tree<T>* Head, tree<T>** new_Head);
+    int get_schetchik()
+    {
+        struct tree<T>* new_Head = this->root;
+        this->search_head_for_balance(this->root, &new_Head);
+        std::cout << "::::::::::::::" << new_Head->value<< std::endl;
+        std::cout << "::::::::::::::" << this->root->value << std::endl;
+        return this->schetchik;
+
+
+    }
 
 protected:
     struct tree<T>* create(T i);
@@ -42,6 +53,8 @@ protected:
     void change_hight(struct tree<T>* Position);
     void print_tree_with_hight (struct tree<T>* Position);
     void Balance_tree_polzovatel();
+    int schet;
+    int schetchik;
 };
 
 
