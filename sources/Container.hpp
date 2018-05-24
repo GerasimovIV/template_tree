@@ -8,8 +8,6 @@ public:
     virtual void insert(T value) = 0;
     virtual bool exists(T value) = 0;
     virtual void remove(T value) = 0;
-    virtual void Balance_tree_polzovatel() = 0;
-    virtual int get_schetchik() = 0;
     // Это потом заменим на перегруженный оператор <<
     virtual void print() = 0;
 
